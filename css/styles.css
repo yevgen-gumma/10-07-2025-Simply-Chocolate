@@ -1,3 +1,16 @@
+/*у всьому css властивість font-weight */
+/* можна не прописувати, якщо в макеті */
+/* вказано 400, оскільки в браузері це */
+/* значення - за замовчуванням */
+
+/* у кнопках властивість font-family треба*/
+/* прописувати, оскільки тег button має */
+/* власний стиль тексту */
+
+/* тег address не наслідує стиль шрифту */
+/* тому треба прописувати для нього властивість */
+/* font-style:normal, це прибере нахилений текст */
+
 body {
   font-family: "Montserrat", sans-serif;
 }
@@ -31,13 +44,17 @@ a {
   letter-spacing: -0.03em;
   color: #111111;
 }
+
 .header-logo-italic {
   font-style: italic;
 }
+
 .header-menu {
 }
+
 .header-menu-item {
 }
+
 .header-menu-link {
   font-weight: 500;
   font-size: 14px;
@@ -45,9 +62,372 @@ a {
   letter-spacing: -0.02em;
   color: #111111;
 }
+
+.header-menu-link:hover {
+  color: #fd9222;
+}
+
+.header-menu-link:focus {
+  color: #fd9222;
+}
+
 .header-soc {
 }
+
 .header-soc-item {
 }
+
 .header-soc-link {
+}
+
+.hero {
+  background-color: rgba(17, 17, 17, 0.6);
+}
+
+.hero-title {
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 1.21;
+  letter-spacing: -0.03em;
+}
+
+.hero-buy-btn {
+  color: #ffffff;
+  background-color: rgba(253, 146, 34, 1);
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: normal;
+  cursor: pointer;
+}
+
+.hero-buy-btn:hover,
+.hero-buy-btn:focus {
+  color: rgba(253, 146, 34, 1);
+  background-color: rgba(252, 241, 224, 1);
+}
+
+.hero-anchor-btn {
+  color: #ffffff;
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: normal;
+}
+
+.hero-anchor-btn:hover {
+  color: rgba(253, 146, 34, 1);
+}
+
+.hero-bottom-btn {
+  color: #ffffff;
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.03em;
+}
+
+.features {
+  background-color: rgba(30, 24, 35, 1);
+}
+
+.features-list {
+}
+
+.features-item {
+}
+
+.features-subtitle {
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: normal;
+}
+
+.features-item-text {
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+}
+
+.taste {
+}
+
+.taste-title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: -0.03em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.taste-title span {
+  color: #fd9222;
+}
+
+.taste-list {
+}
+
+.taste-item {
+}
+
+.taste-img {
+}
+
+.taste-subtitle {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+}
+
+.made {
+}
+
+.made-title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: -0.03em;
+  text-align: center;
+  text-transform: uppercase;
+  color: #111111;
+}
+
+.made-title span {
+  color: #fd9222;
+}
+
+.made-img {
+}
+
+.made-subtitle {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.33;
+  color: #111111;
+}
+
+.made-list {
+}
+.made-item {
+}
+
+.made-item-text {
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  color: #111111;
+}
+
+.products {
+}
+
+.products-title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: -0.03em;
+  text-align: center;
+  text-transform: uppercase;
+  color: #111111;
+}
+
+.products-title span {
+  color: #fd9222;
+}
+
+.products-list {
+}
+
+.products-item {
+}
+
+.products-img {
+}
+
+.products-subtitle {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: #111111;
+}
+
+.products-item-text {
+  font-style: Regular;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: -0.02em;
+  color: rgba(17, 17, 17, 0.7);
+}
+
+.products-item-price {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: normal;
+  color: #111111;
+}
+
+.sellers {
+}
+
+.sellers-title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: -0.03em;
+  text-align: center;
+  text-transform: uppercase;
+  columns: #111111;
+}
+
+.sellers-title span {
+  color: #fd9222;
+}
+
+.sellers-list {
+}
+
+.sellers-item {
+}
+
+.sellers-img {
+}
+
+.sellers-subtitle {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: #111111;
+}
+
+.loved {
+}
+
+.loved-title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: -0.03em;
+  text-align: center;
+  text-transform: uppercase;
+  color: #111111;
+}
+
+.loved-title span {
+  color: #fd9222;
+}
+
+.loved-list {
+}
+
+.loved-item {
+}
+
+.loved-img {
+}
+
+.loved-subtitle {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.33;
+  text-align: center;
+  color: #111111;
+}
+
+.loved-item-text {
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: rgba(17, 17, 17, 0.7);
+}
+
+.loved-btn {
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: normal;
+  color: rgba(17, 17, 17, 1);
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+.loved-btn:hover,
+.loved-btn:focus {
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(253, 146, 34, 1);
+}
+
+.footer {
+  background-color: rgba(30, 24, 35, 1);
+}
+
+.footer-text {
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 1.21;
+  letter-spacing: -0.02em;
+}
+
+.footer-text span {
+  color: #fd9222;
+}
+
+.footer-subtitle {
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.29;
+  text-align: center;
+}
+
+.footer-address {
+  font-style: normal;
+}
+
+.footer-address-list {
+}
+
+.footer-address-item {
+}
+
+.footer-address-link {
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  text-align: center;
+}
+
+.footer-navigation {
+}
+
+.footer-menu-list {
+}
+
+.footer-menu-item {
+}
+
+.footer-menu-link {
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.18;
+  letter-spacing: -0.02em;
+  vertical-align: middle;
+}
+
+.footer-menu-link:hover,
+.footer-menu-link:focus {
+  color: #fd9222;
 }

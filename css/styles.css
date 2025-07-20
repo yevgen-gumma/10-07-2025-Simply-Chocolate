@@ -13,6 +13,7 @@
 
 body {
   font-family: "Montserrat", sans-serif;
+  background-color: #fafafa;
 }
 
 ul {
@@ -35,6 +36,41 @@ a {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.container {
+  max-width: 1166px;
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  outline: 2px solid red;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+}
+
+.header {
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .header-logo {
@@ -81,7 +117,13 @@ a {
 }
 
 .hero {
+  padding-bottom: 80px;
+}
+
+.hero-container {
   background-color: rgba(17, 17, 17, 0.6);
+  padding: 381px 40px 40px 40px;
+  border-radius: 30px;
 }
 
 .hero-title {
@@ -90,6 +132,8 @@ a {
   font-size: 28px;
   line-height: 1.21;
   letter-spacing: -0.03em;
+  margin-bottom: 32px;
+  max-width: 484px;
 }
 
 .hero-buy-btn {
@@ -130,6 +174,8 @@ a {
 }
 
 .features {
+  padding-top: 50px;
+  padding-bottom: 50px;
   background-color: rgba(30, 24, 35, 1);
 }
 
@@ -144,6 +190,7 @@ a {
   font-weight: 600;
   font-size: 18px;
   line-height: normal;
+  margin-bottom: 18px;
 }
 
 .features-item-text {
@@ -154,6 +201,7 @@ a {
 }
 
 .taste {
+  padding-top: 120px;
 }
 
 .taste-title {
@@ -163,6 +211,7 @@ a {
   letter-spacing: -0.03em;
   text-align: center;
   text-transform: uppercase;
+  margin-bottom: 50px;
 }
 
 .taste-title span {
@@ -176,6 +225,7 @@ a {
 }
 
 .taste-img {
+  margin-bottom: 36px;
 }
 
 .taste-subtitle {
@@ -186,6 +236,7 @@ a {
 }
 
 .made {
+  padding-top: 120px;
 }
 
 .made-title {
@@ -196,6 +247,7 @@ a {
   text-align: center;
   text-transform: uppercase;
   color: #111111;
+  margin-bottom: 50px;
 }
 
 .made-title span {
@@ -210,11 +262,16 @@ a {
   font-size: 18px;
   line-height: 1.33;
   color: #111111;
+  margin-bottom: 28px;
 }
 
 .made-list {
 }
 .made-item {
+  margin-bottom: 24px;
+}
+.made-item:last-child {
+  margin-bottom: 0;
 }
 
 .made-item-text {
@@ -225,6 +282,7 @@ a {
 }
 
 .products {
+  padding-top: 120px;
 }
 
 .products-title {
@@ -235,6 +293,7 @@ a {
   text-align: center;
   text-transform: uppercase;
   color: #111111;
+  margin-bottom: 50px;
 }
 
 .products-title span {
@@ -245,9 +304,15 @@ a {
 }
 
 .products-item {
+  background-color: #fff;
+  border: 1px solid #1111111a;
+  border-radius: 15px;
+  padding: 32px 20px;
+  text-align: center;
 }
 
 .products-img {
+  margin-bottom: 8px;
 }
 
 .products-subtitle {
@@ -257,6 +322,7 @@ a {
   letter-spacing: -0.02em;
   text-transform: uppercase;
   color: #111111;
+  margin-bottom: 2px;
 }
 
 .products-item-text {
@@ -265,6 +331,9 @@ a {
   line-height: 1.17;
   letter-spacing: -0.02em;
   color: rgba(17, 17, 17, 0.7);
+  margin-bottom: 18px;
+  border: 1px solid #1111111a;
+  border-radius: 15px;
 }
 
 .products-item-price {
@@ -275,6 +344,7 @@ a {
 }
 
 .sellers {
+  padding-top: 120px;
 }
 
 .sellers-title {
@@ -285,6 +355,7 @@ a {
   text-align: center;
   text-transform: uppercase;
   columns: #111111;
+  margin-bottom: 50px;
 }
 
 .sellers-title span {
@@ -307,9 +378,20 @@ a {
   letter-spacing: -0.02em;
   text-transform: uppercase;
   color: #111111;
+  border-width: 0px, 1px, 1px, 1px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-style: solid;
+  border-color: #1111111a;
+  border-top: none;
+  text-align: center;
+  padding-top: 28px;
+  padding-bottom: 28px;
 }
 
 .loved {
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .loved-title {
@@ -327,9 +409,14 @@ a {
 }
 
 .loved-list {
+  margin-bottom: 50px;
 }
 
 .loved-item {
+  border: 1px solid #1111111a;
+  border-radius: 15px;
+  background-color: #ffffff;
+  padding: 56px 24px 24px 24px;
 }
 
 .loved-img {
@@ -341,6 +428,7 @@ a {
   line-height: 1.33;
   text-align: center;
   color: #111111;
+  margin-bottom: 24px;
 }
 
 .loved-item-text {
@@ -359,6 +447,8 @@ a {
   color: rgba(17, 17, 17, 1);
   background-color: #ffffff;
   cursor: pointer;
+  display: block;
+  margin: 0 auto;
 }
 
 .loved-btn:hover,
@@ -369,6 +459,8 @@ a {
 
 .footer {
   background-color: rgba(30, 24, 35, 1);
+  padding-top: 50px;
+  padding-bottom: 86px;
 }
 
 .footer-text {
@@ -377,6 +469,7 @@ a {
   font-size: 28px;
   line-height: 1.21;
   letter-spacing: -0.02em;
+  max-width: 300px;
 }
 
 .footer-text span {
@@ -389,6 +482,7 @@ a {
   font-size: 14px;
   line-height: 1.29;
   text-align: center;
+  margin-bottom: 14px;
 }
 
 .footer-address {
@@ -407,6 +501,12 @@ a {
   line-height: 1.29;
   letter-spacing: -0.02em;
   text-align: center;
+}
+
+.footer-top {
+  border-bottom: 1px solid #ffffff1a;
+  padding-bottom: 50px;
+  margin-bottom: 24px;
 }
 
 .footer-navigation {

@@ -11,6 +11,12 @@
 /* тому треба прописувати для нього властивість */
 /* font-style:normal, це прибере нахилений текст */
 
+/* зробити заголовок в 2 ряди і відцентрувати його */
+/* задати max width к-ть px з макету, */
+/* потім margin 0 auto, щоб був по центру */
+/* margin-bottom ставити після margin 0 auto */
+/* бо auto перебиває bottom */
+
 body {
   font-family: "Montserrat", sans-serif;
   background-color: #fafafa;
@@ -73,12 +79,26 @@ img {
   padding-bottom: 20px;
 }
 
+.header-container {
+  display: flex;
+  gap: 90px;
+}
+
+.header-navigation {
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-between;
+}
+
 .header-logo {
   font-weight: 700;
   font-size: 18px;
   line-height: 1.11;
   letter-spacing: -0.03em;
   color: #111111;
+  display: flex;
+  align-items: center;
+  gap: 4px;
 }
 
 .header-logo-italic {
@@ -86,6 +106,9 @@ img {
 }
 
 .header-menu {
+  display: flex;
+  gap: 24px;
+  align-items: center;
 }
 
 .header-menu-item {
@@ -108,6 +131,9 @@ img {
 }
 
 .header-soc {
+  display: flex;
+  gap: 14px;
+  align-items: center;
 }
 
 .header-soc-item {
@@ -136,6 +162,11 @@ img {
   max-width: 484px;
 }
 
+.hero-buttons {
+  display: flex;
+  align-items: center;
+}
+
 .hero-buy-btn {
   color: #ffffff;
   background-color: rgba(253, 146, 34, 1);
@@ -144,6 +175,10 @@ img {
   font-size: 14px;
   line-height: normal;
   cursor: pointer;
+  padding: 14px 40px;
+  border-radius: 100px;
+  border: none;
+  margin-right: 14px;
 }
 
 .hero-buy-btn:hover,
@@ -158,6 +193,10 @@ img {
   font-weight: 600;
   font-size: 14px;
   line-height: normal;
+  border: 1px solid #ffffff;
+  padding: 14px 40px;
+  border-radius: 100px;
+  cursor: pointer;
 }
 
 .hero-anchor-btn:hover {
@@ -171,6 +210,7 @@ img {
   font-size: 14px;
   line-height: 1.29;
   letter-spacing: -0.03em;
+  margin-left: auto;
 }
 
 .features {
@@ -180,9 +220,13 @@ img {
 }
 
 .features-list {
+  padding: 0 18px 0 18px;
+  display: flex;
+  gap: 88px;
 }
 
 .features-item {
+  width: calc((100% - 88px * 2) / 3);
 }
 
 .features-subtitle {
@@ -211,6 +255,8 @@ img {
   letter-spacing: -0.03em;
   text-align: center;
   text-transform: uppercase;
+  max-width: 412px;
+  margin: 0 auto;
   margin-bottom: 50px;
 }
 
@@ -219,9 +265,31 @@ img {
 }
 
 .taste-list {
+  display: flex;
+  column-gap: 32px;
+  row-gap: 24px;
+  flex-wrap: wrap;
 }
 
 .taste-item {
+  border-radius: 15px;
+  width: calc((100% - 32px * 3) / 4);
+  padding: 28px 23px;
+}
+
+.taste-item:nth-child(4n + 1) {
+  background-color: #fd9222;
+}
+.taste-item:nth-child(2n) {
+  border: 1px solid #fd9222;
+}
+
+.taste-item:nth-child(4n + 3) {
+  background-color: #1e1823;
+}
+
+.taste-item:nth-child(odd) .taste-subtitle {
+  color: #ffffff;
 }
 
 .taste-img {
@@ -250,11 +318,21 @@ img {
   margin-bottom: 50px;
 }
 
+.made-wrap {
+  display: flex;
+  gap: 20px;
+}
+
 .made-title span {
   color: #fd9222;
 }
 
 .made-img {
+}
+
+.made-content {
+  background-color: #ffffff;
+  padding: 32px;
 }
 
 .made-subtitle {
@@ -301,6 +379,9 @@ img {
 }
 
 .products-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px 24px;
 }
 
 .products-item {
@@ -309,6 +390,7 @@ img {
   border-radius: 15px;
   padding: 32px 20px;
   text-align: center;
+  width: calc((100% - 18px * 3) / 4);
 }
 
 .products-img {
@@ -363,9 +445,12 @@ img {
 }
 
 .sellers-list {
+  display: flex;
+  justify-content: space-between;
 }
 
 .sellers-item {
+  width: calc((100% - 16 * 2) / 3);
 }
 
 .sellers-img {
@@ -410,6 +495,8 @@ img {
 
 .loved-list {
   margin-bottom: 50px;
+  display: flex;
+  gap: 28px;
 }
 
 .loved-item {
@@ -417,6 +504,7 @@ img {
   border-radius: 15px;
   background-color: #ffffff;
   padding: 56px 24px 24px 24px;
+  flex-basis: calc((100% - 28px * 2) / 3);
 }
 
 .loved-img {
@@ -449,6 +537,9 @@ img {
   cursor: pointer;
   display: block;
   margin: 0 auto;
+  padding: 14px 40px;
+  border: 1px solid #fd9222;
+  border-radius: 100px;
 }
 
 .loved-btn:hover,

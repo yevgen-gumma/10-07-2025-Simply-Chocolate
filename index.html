@@ -18,8 +18,8 @@
   </head>
   <body>
     <header class="header">
-      <div class="container">
-        <nav header-navigation>
+      <div class="container header-container">
+        <nav class="header-navigation">
           <a class="header-logo" href=""
             ><span class="header-logo-italic">SIMPLY</span> CHOCOLATE
             <img src="./images/chocolate.svg" alt="site-logo"
@@ -76,9 +76,11 @@
             Treat yourself or a loved one to our finest ingredients for a moment
             of pure delight!
           </h1>
-          <button class="hero-buy-btn" type="button">Buy now</button>
-          <a class="hero-anchor-btn" href="#howitsmade">How it’s made</a>
-          <a class="hero-bottom-btn" href="#footer">scroll down</a>
+          <div class="hero-buttons">
+            <button class="hero-buy-btn" type="button">Buy now</button>
+            <a class="hero-anchor-btn" href="#howitsmade">How it’s made</a>
+            <a class="hero-bottom-btn" href="#footer">scroll down</a>
+          </div>
         </section>
         </div>
       <section class="features">
@@ -198,47 +200,51 @@
       <section id="howitsmade" class="made">
         <div class="container">
           <h2 class="made-title">How it’s <span>made</span>?</h2>
-          <img
-            class="made-img"
-            src="./images/how-it’s-made/image.jpg"
-            alt="img"
-            width="600"
-            height="400"
-          />
-          <h3 class="made-subtitle">
-            Try our chocolates today and discover the perfect balance of flavor
-          </h3>
-          <ul class="made-list">
-            <li class="made-item">
-              <p class="made-item-text">
-                Heat the milk in a saucepan without bringing it to a boil. Add
-                sugar and cocoa powder.
-              </p>
-            </li>
-            <li class="made-item">
-              <p class="made-item-text">
-                At the same time, prepare a water bath. Melt the butter on it.
-              </p>
-            </li>
-            <li class="made-item">
-              <p class="made-item-text">
-                "Mix" the milk mixture and already liquid butter. Mix thoroughly
-                with a silicone spatula so that the mass becomes uniform and
-                silky.
-              </p>
-            </li>
-            <li class="made-item">
-              <p class="made-item-text">
-                Heat the mixture over low heat, letting it barely boil.
-              </p>
-            </li>
-            <li class="made-item">
-              <p class="made-item-text">
-                Pour the chocolate into special containers (can be replaced with
-                ice molds). Allow to cool and harden.
-              </p>
-            </li>
-          </ul>
+          <div class="made-wrap">
+            <img
+              class="made-img"
+              src="./images/how-it’s-made/image.jpg"
+              alt="img"
+              width="600"
+              height="400"
+            />
+            <div class="made-content">
+              <h3 class="made-subtitle">
+                Try our chocolates today and discover the perfect balance of flavor
+              </h3>
+              <ul class="made-list">
+                <li class="made-item">
+                  <p class="made-item-text">
+                    Heat the milk in a saucepan without bringing it to a boil. Add
+                    sugar and cocoa powder.
+                  </p>
+                </li>
+                <li class="made-item">
+                  <p class="made-item-text">
+                    At the same time, prepare a water bath. Melt the butter on it.
+                  </p>
+                </li>
+                <li class="made-item">
+                  <p class="made-item-text">
+                    "Mix" the milk mixture and already liquid butter. Mix thoroughly
+                    with a silicone spatula so that the mass becomes uniform and
+                    silky.
+                  </p>
+                </li>
+                <li class="made-item">
+                  <p class="made-item-text">
+                    Heat the mixture over low heat, letting it barely boil.
+                  </p>
+                </li>
+                <li class="made-item">
+                  <p class="made-item-text">
+                    Pour the chocolate into special containers (can be replaced with
+                    ice molds). Allow to cool and harden.
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </section>
       <section class="products">

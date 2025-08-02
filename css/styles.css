@@ -572,8 +572,11 @@ img {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.29;
-  text-align: center;
   margin-bottom: 14px;
+}
+.footer-soc-list {
+  display: flex;
+  gap: 14px;
 }
 
 .footer-address {
@@ -592,18 +595,28 @@ img {
   line-height: 1.29;
   letter-spacing: -0.02em;
   text-align: center;
+  margin-bottom: 4px;
 }
 
 .footer-top {
   border-bottom: 1px solid #ffffff1a;
   padding-bottom: 50px;
   margin-bottom: 24px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-top-right-half {
+  display: flex;
+  gap: 50px;
 }
 
 .footer-navigation {
 }
 
 .footer-menu-list {
+  display: flex;
+  gap: 24px;
 }
 
 .footer-menu-item {

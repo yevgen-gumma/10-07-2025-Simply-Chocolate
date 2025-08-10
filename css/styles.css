@@ -101,6 +101,15 @@ img {
   gap: 4px;
 }
 
+.header-logo::after {
+  content: "";
+  width: 24px;
+  height: 24px;
+  background-image: url(../images/header/chocolate.svg);
+  background-size: cover;
+  background-position: center;
+}
+
 .header-logo-italic {
   font-style: italic;
 }
@@ -137,9 +146,35 @@ img {
 }
 
 .header-soc-item {
+  width: 40px;
+  height: 40px;
 }
 
 .header-soc-link {
+  width: 100%;
+  height: 100%;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 10px;
+
+  /* для центрування іконки */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-soc-link:hover {
+  border-color: rgba(253, 146, 34, 0.1);
+}
+
+/* щоб при наведенні змінювало рамку 
+/* та колір іконки одночасно, а не рамки */
+/* а потім іконки */
+.header-soc-icon {
+  fill: #000;
+}
+
+.header-soc-link:hover .header-soc-icon {
+  fill: rgba(253, 146, 34, 1);
 }
 
 .hero {
@@ -148,6 +183,14 @@ img {
 
 .hero-container {
   background-color: rgba(17, 17, 17, 0.6);
+  background-image: linear-gradient(
+      rgba(17, 17, 17, 0.4),
+      rgba(17, 17, 17, 0.4)
+    ),
+    url(../images/hero/chocolate_main.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   padding: 381px 40px 40px 40px;
   border-radius: 30px;
 }
@@ -164,7 +207,7 @@ img {
 
 .hero-buttons {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
 }
 
 .hero-buy-btn {
@@ -211,6 +254,26 @@ img {
   line-height: 1.29;
   letter-spacing: -0.03em;
   margin-left: auto;
+  display: flex;
+  gap: 14px;
+  align-items: center;
+}
+
+.hero-bottom-btn::after {
+  content: "";
+  width: 38px;
+  height: 38px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  background-image: url(../images/hero/angle-small-left.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 16px;
+  transition-duration: 150ms;
+}
+
+.hero-bottom-btn:hover::after {
+  background-size: 22px;
 }
 
 .features {

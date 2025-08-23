@@ -129,6 +129,8 @@ img {
   line-height: 1.14;
   letter-spacing: -0.02em;
   color: #111111;
+  transition-property: color;
+  transition-duration: 150ms;
 }
 
 .header-menu-link:hover {

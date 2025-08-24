@@ -224,6 +224,7 @@ img {
   border-radius: 100px;
   border: none;
   margin-right: 14px;
+  transition: color 300ms linear, background-color 300ms linear;
 }
 
 .hero-buy-btn:hover,
@@ -242,10 +243,12 @@ img {
   padding: 14px 40px;
   border-radius: 100px;
   cursor: pointer;
+  transition: color 300ms linear, border-color 300ms linear;
 }
 
 .hero-anchor-btn:hover {
   color: rgba(253, 146, 34, 1);
+  border-color: #fd9222;
 }
 
 .hero-bottom-btn {
@@ -288,10 +291,33 @@ img {
   padding: 0 18px 0 18px;
   display: flex;
   gap: 88px;
+  position: relative;
 }
 
 .features-item {
   width: calc((100% - 88px * 2) / 3);
+}
+
+.features-item:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 124px;
+  right: -44px;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.features-item-icon {
+  width: 62px;
+  height: 62px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 22px;
 }
 
 .features-subtitle {
@@ -516,9 +542,45 @@ img {
 
 .sellers-item {
   width: calc((100% - 16 * 2) / 3);
+  position: relative;
+}
+
+.sellers-item:hover .sellers-text-wrap {
+  transform: translateY(0);
+}
+
+.sellers-cover-wrap {
+  position: relative;
+  overflow: hidden;
 }
 
 .sellers-img {
+}
+
+.sellers-text-wrap {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  background: linear-gradient(
+    165deg,
+    rgba(253, 253, 255, 1) 3.97%,
+    rgba(8, 2, 21, 0) 109.76%
+  );
+  backdrop-filter: blur(7.5px);
+  border-radius: 15px 15px 0px 0px;
+  transform: translateY(100%);
+  transition: transform 200ms linear;
+}
+
+.sellers-cover-text {
+  color: #fafafa;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
 }
 
 .sellers-subtitle {
